@@ -6,7 +6,7 @@
   "author": "Aaroh Mankad (http://aaromankad.com)",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon --exec babel-node index.js"
+    "start": "node --exec babel-node index.js"
   },
   "dependencies": {
     "apollo-server-express": "^1.0.2",
@@ -27,6 +27,6 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-stage-3": "^6.24.1",
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.12.5"
   }
 }
