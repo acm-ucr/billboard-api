@@ -1,0 +1,29 @@
+type Announcement {
+  id: ID!
+  header: String
+  body: String
+  imageUrl: String
+}
+
+type AnnouncementSubscriptionPayload {
+  mutation: _ModelMutationType!
+  node: Announcement
+}
+
+type Query {
+  getAnnouncements(
+    last: Int
+  ): [Announcement!]!
+}
+
+type Mutation {
+  addAnnouncement (
+    header: String
+    body: String
+    imageUrl: String
+  ): Announcement!
+}
+
+type Subscription {
+  Announcement: AnnouncementSubscriptionPayload!
+}
