@@ -16,7 +16,7 @@ const
   schema = require(`${base}/schema`),
   connectMongo = require(`${base}/connectors/mongo`),
   { authenticate } = require(`${base}/authenticate`),
-  port = process.env.PORT || 3000,
+  port = process.env.PORT || 8888,
   start = async () => {
     const
       mongo = await connectMongo(),
