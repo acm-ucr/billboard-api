@@ -1,3 +1,3 @@
 module.exports = {
-  URL: ENV['MONGODB_URI'] || 'mongodb://localhost:27017/billboard-api'
+  URL: process.env.MONGODB_URI || 'mongodb://localhost:27017/billboard-api'
 };
